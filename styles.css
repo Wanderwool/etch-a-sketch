@@ -1,0 +1,33 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+  
+  #container {
+    display: grid;
+    
+    height: 512px;
+    width: 512px;
+    min-width: 128px;
+    min-height: 128px;
+    
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    border: 2px solid black;
+    box-shadow: 0.5px;
+  }
+  
+  
+  .grid-item {
+    min-height: 10px;
+    min-width: 10px;
+    text-align: center;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+  }
